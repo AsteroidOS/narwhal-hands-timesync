@@ -1,0 +1,9 @@
+[Unit]
+Description=Sync time to narwhal's hands
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hands-timesync
+
+[Install]
+WantedBy=basic.target

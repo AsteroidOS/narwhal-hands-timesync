@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync time to narwhal's hands
+Requires=hands-timesync.service
+
+[Timer]
+Unit=hands-timesync.service
+OnClockChange=true
+OnTimezoneChange=true
+
+[Install]
+WantedBy=timers.target
